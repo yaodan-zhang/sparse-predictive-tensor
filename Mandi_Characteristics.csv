@@ -1,0 +1,213 @@
+MandiId,MandiName,DistrictId,DistrictName,State,Lat,Lon,Type
+1,Tajpur,1,Samastipur,Bihar,25.849857,85.666605,NULL
+2,Kalyani,1,Samastipur,Bihar,25.86519,85.775743,NULL
+3,Samastipur,1,Samastipur,Bihar,25.862968,85.781026,NULL
+4,Bihar Sharif,7,Nalanda,Bihar,25.198215,85.514873,NULL
+5,Chapra,1,Samastipur,Bihar,25.520284,85.607506,NULL
+6,Siwan,33,Siwan,Bihar,26.219621,84.356659,Open Market
+7,Dalsingh Sarai,1,Samastipur,Bihar,25.6675039,85.8346046,NULL
+8,Pusa,1,Samastipur,Bihar,25.982108,85.648625,NULL
+9,Sujawalpur,1,Samastipur,Bihar,25.714936,85.735161,NULL
+10,Sindhiya,1,Samastipur,Bihar,25.841212,86.160599,NULL
+11,Farbisganj,3,Arariya,Bihar,26.299274,87.266612,NULL
+12,Darbhanga,4,Darbhanga,Bihar,26.111868,85.896004,NULL
+13,Gaya,5,Gaya,Bihar,24.791396,85.000234,NULL
+14,Patna,6,Patna,Bihar,25.5940947,85.1375645,NULL
+15,Muzaffarpur,2,Muzaffarpur,Bihar,26.120888,85.36472,NULL
+16,Arra,8,Bhojpur,Bihar,25.556044,84.660331,NULL
+17,Gopalganj,9,Gopalganj,Bangladesh,26.468547,84.443332,NULL
+18,Benipur,4,Darbhanga,Bihar,26.0581591,86.1471939,NULL
+19,Sarabdipur,2,Muzaffarpur,Bihar,24.8182853,84.8789418,NULL
+20,Mahdudabad,1,Samastipur,Bihar,25.596961,85.702545,NULL
+21,Hajipur,10,Vaishali,Bihar,25.685839,85.214591,NULL
+22,Noorsarai,7,Nalanda,Bihar,25.274819,85.456897,NULL
+23,Beehat,1,Samastipur,Bihar,25.862968,85.781026,NULL
+24,Raja Chowk,1,Samastipur,Bihar,25.588876,85.788582,NULL
+25,Begusarai,11,Begusarai,Bihar,25.416675,86.129379,NULL
+26,Laheria Saraay,4,Darbhanga,Bihar,26.119357,85.904896,NULL
+27,Dholi,2,Muzaffarpur,Bihar,25.995073,85.589507,NULL
+28,Ghirni Pokhar,2,Muzaffarpur,Bihar,26.122003,85.389582,NULL
+29,Godhiya (Goraul),2,Muzaffarpur,Bihar,25.93712026,85.33946503,NULL
+30,Bhajan Singh,2,Muzaffarpur,Bihar,26.56725244,85.51167659,NULL
+31,Patna (Bazar Samiti),6,Patna,Bihar,25.608623,85.175153,NULL
+32,Patna City (Gulzar Baag),6,Patna,Bihar,25.62376982,85.1099417,NULL
+33,Satmail Bazar,12,Jessore Sadar,Bangladesh,23.1660967,89.2277026,NULL
+34,Churamonkathi,12,Jessore Sadar,Bangladesh,23.223839,89.1646469,NULL
+35,Barobazar,13,Kaliganj,West Bengal,23.3041963,89.1405932,NULL
+36,Rupdia Bazar,12,Jessore Sadar,Bangladesh,23.1276319,89.2904007,NULL
+37,Kalibari Bazar,12,Jessore Sadar,Bangladesh,22.9663404,89.3333695,NULL
+38,Abdulpur Bazar,12,Jessore Sadar,Bangladesh,23.2238171,89.1573572,NULL
+39,Narangali Bazar,12,Jessore Sadar,Bangladesh,23.1525139,89.1260196,NULL
+40,Lebutola Bazar,12,Jessore Sadar,Bangladesh,23.2713381,89.2432433,NULL
+41,Khajura Bazar,12,Jessore Sadar,Bangladesh,23.2806992,89.2538389,NULL
+42,Vatarhat Bazar,14,Bagharpara,Bangladesh,0,0,NULL
+43,Polerhat Bazar,14,Bagharpara,Bangladesh,23.2142538,89.341667,NULL
+44,Chatiantola Bazar,12,Jessore Sadar,Bangladesh,23.1660967,89.2277026,NULL
+45,Charavita Bazar,14,Bagharpara,Bangladesh,23.187139,89.3510691,NULL
+46,Monirampur Bazar,15,Monirampur,Bangladesh,23.3660337,89.5105314,NULL
+47,Lohagara Bazar,16,Lohagara,Bangladesh,23.1868783,89.6504545,NULL
+48,Bagharpara Bazar,14,Bagharpara,Bangladesh,23.2199435,89.3461565,NULL
+49,Raipur Bazar,14,Bagharpara,Bangladesh,23.26,89.3,NULL
+50,Shimakhali Bazar,17,Shalikha,Bangladesh,23.325319,89.317148,NULL
+51,Aarpara Bazar,17,Shalikha,Bangladesh,23.3756121,89.372517,NULL
+52,Chutipur Bazar,18,Chougachha,Bangladesh,23.2603293,89.0370477,NULL
+53,Sonadanga Bazar,19,Khulna Sadar,Bangladesh,22.8247809,89.5379687,NULL
+54,Doulatpur Bazar,19,Khulna Sadar,Bangladesh,24.0206887,88.8455037,NULL
+55,Chougacha Bazar,18,Chougachha,Bangladesh,23.2583307,88.926711,NULL
+56,Nawada,20,Nawada,Bihar,24.8910775,85.5354724,NULL
+57,Singhia Ghat,1,Samastipur,Bihar,25.747467,85.975321,NULL
+58,Aatpadi,23,Sangli,Maharashtra,17.4287331,74.9383153,NULL
+59,Akluj,22,Solapur,Maharashtra,17.882445,75.0205283,NULL
+60,Bochaha,2,Muzaffarpur,Bihar,26.160038,85.426638,NULL
+61,Katra Bazaar,2,Muzaffarpur,Bihar,26.22071799,85.64091783,NULL
+62,Ramnagar Bazaar,2,Muzaffarpur,Bihar,26.17741988,85.57407416,NULL
+63,Sarfudinpur,2,Muzaffarpur,Bihar,26.11377562,85.53804103,NULL
+64,Godiya (Goraul),10,Vaishali,Bihar,26.12992684,86.23998452,NULL
+65,Muzaffarpur Haat,2,Muzaffarpur,Bihar,26.12088745,85.36472004,NULL
+66,Bhusra,2,Muzaffarpur,Bihar,26.17183949,85.58436312,NULL
+67,Rosda,1,Samastipur,Bihar,25.8629679,85.7810263,NULL
+68,Block Chowk,1,Samastipur,Bihar,25.8595011,85.775093,NULL
+69,Jaynagar,24,Madhubani,Bihar,26.588399,86.137015,NULL
+72,Karad,21,Satara,Maharashtra,17.2759841,74.2003231,NULL
+73,Koregaon,21,Satara,Maharashtra,17.6966354,74.1607179,NULL
+75,Gursale,21,Satara,Maharashtra,17.5262119,74.4364417,NULL
+76,Gondavale,21,Satara,Maharashtra,17.669278,74.579281,NULL
+77,Tasgaon,23,Sangli,Maharashtra,17.0295253,74.6078344,NULL
+78,Dahiwadi,21,Satara,Maharashtra,17.7031208,74.5433988,NULL
+79,Palus,23,Sangli,Maharashtra,17.097643,74.449632,NULL
+80,Piliv,22,Solapur,Maharashtra,17.6813957,74.9617924,NULL
+81,Gultekadi (Pune),25,Pune,Maharashtra,18.4876541,73.8683697,NULL
+82,Mahud,22,Solapur,Maharashtra,17.6090377,75.0983446,NULL
+83,Mayani,21,Satara,Maharashtra,17.4388269,74.5492576,NULL
+84,Mumbai,26,Mumbai,Maharashtra,19.0759837,72.8776559,NULL
+85,Mhaswad,21,Satara,Maharashtra,17.6334395,74.7871061,NULL
+86,Vaduj,21,Satara,Maharashtra,17.593548,74.451097,NULL
+87,Wai,21,Satara,Maharashtra,17.9486823,73.8918897,NULL
+88,Vashi,26,Mumbai,Maharashtra,19.0770644,72.9989925,Open Market
+89,Vita,23,Sangli,Maharashtra,17.275173,74.535713,NULL
+90,Velapur,22,Solapur,Maharashtra,17.794323,75.0546267,NULL
+91,Sheri Mala,21,Satara,Maharashtra,17.6804639,74.018261,NULL
+92,Sangali,23,Sangli,Maharashtra,16.8523973,74.5814773,NULL
+93,Sangola,23,Sangli,Maharashtra,17.2165853,74.81529,NULL
+94,Satara,21,Satara,Maharashtra,17.6804639,74.018261,NULL
+95,Solapur,22,Solapur,Maharashtra,17.6599188,75.9063906,NULL
+96,Hubale,22,Solapur,Maharashtra,50.6795458,23.179047,NULL
+97,Danapur,6,Patna,Bihar,25.62066725,85.04932545,NULL
+98,Hashimpur Bazar,12,Jessore Sadar,Bangladesh,23.2194197,89.2288171,NULL
+99,Vashi,27,Navi Mumbai,Maharashtra,19.0770644,72.9989925,Open Market
+100,Turbhe,27,Navi Mumbai,Maharashtra,19.0726786,73.0198654,Open Market
+101,Nayakachi Wadi,21,Satara,Maharashtra,17.63240832,74.78479251,NULL
+102,Kurla,25,Pune,Maharashtra,19.0655986,72.8791535,NULL
+103,Khagadiya Mandi,28,Khagadiya,Bihar,25.512946,86.55269,Open Market
+104,Vasai,30,Palghar,Maharashtra,19.3919275,72.8397317,Open Market
+105,Kalamboli,27,Navi Mumbai,Maharashtra,19.032803,73.1012153,NULL
+106,Dighanchi,23,Sangli,Maharashtra,17.525688,74.9238001,NULL
+107,Gulbarga APMC,23,Sangli,Maharashtra,17.329731,76.8342957,NULL
+108,Ranchi,1,Samastipur,Bihar,25.8599895,85.7863556,NULL
+109,Shasharam ,1,Samastipur,Bihar,24.949036,84.0314295,NULL
+110,Shaharsha,1,Samastipur,Bihar,25.85999,85.786356,NULL
+111,Jhanjharpur,1,Samastipur,Bihar,26.2674009,86.2969422,NULL
+112,Mann Deshi ,21,Satara,Maharashtra,17.634435,74.783188,NULL
+113,Dharmendra,1,Samastipur,Bihar,25.8629679,85.7810263,NULL
+114,Dadar Flower Market,26,Mumbai,Maharashtra,19.012071,72.837001,NULL
+115,Pandharpur ,22,Solapur,Maharashtra,17.6745535,75.3237262,NULL
+116,Indapur ,25,Pune,Maharashtra,18.1140272,75.0319086,NULL
+117,Kayamnagar,8,Bhojpur,Bihar,25.596279,84.64922,NULL
+118,Bhojpur,32,Buxar,Bihar,25.56471036,83.97774808,NULL
+119,maliabag,32,Buxar,Bihar,25.34433601,84.212952,NULL
+120,Piro,32,Buxar,Bihar,26.92824405,67.81003285,NULL
+121,Subhai Chak,10,Vaishali,Bihar,25.72393931,85.25016189,NULL
+122,Parsaunia,10,Vaishali,Bihar,25.78349,85.379498,NULL
+123,Sarai ,10,Vaishali,Bihar,25.793503,85.277421,NULL
+124,Bhagwanpur,10,Vaishali,Bihar,25.86362202,85.29049862,NULL
+125,Musallapur Haat,6,Patna,Bihar,25.612916,85.176891,NULL
+126,Lalganj Bypass,10,Vaishali,Bihar,25.79937984,82.99597006,NULL
+127,Ganj Bazar,2,Muzaffarpur,Bihar,26.256338,85.351174,NULL
+128,Pahadpur ,2,Muzaffarpur,Bihar,25.92112371,85.63192438,NULL
+129,Bihari,10,Vaishali,Bihar,25.6838206,85.354965,NULL
+130,Sahpur ,8,Bhojpur,Bihar,25.585983,84.448663,NULL
+131,Behea,8,Bhojpur,Bihar,25.555588,84.467142,NULL
+132,Karnamepur,8,Bhojpur,Bihar,25.668166,84.363406,NULL
+133,Buxar,32,Buxar,Bihar,25.56471,83.977748,NULL
+134,Dharahra ,8,Bhojpur,Bihar,25.569481,84.463862,NULL
+135,Jahangirpur ,2,Muzaffarpur,Bihar,26.18924056,85.72178911,NULL
+136,Neura,2,Muzaffarpur,Bihar,26.029453,85.186814,NULL
+137,Khemaipatti,2,Muzaffarpur,Bihar,26.23742097,85.3714839,NULL
+138,Satpura Mandi,10,Vaishali,Bihar,21.4166667,76.1666667,NULL
+139,Banthu,10,Vaishali,Bihar,25.880645,85.283603,NULL
+140,jamalpur ,8,Bhojpur,Bihar,25.626122,84.781162,NULL
+141,saraiyan,8,Bhojpur,Bihar,25.650152,84.6295991,NULL
+142,chandi ,8,Bhojpur,Bihar,25.541797,84.734168,NULL
+143,Digha Mandi,6,Patna,Bihar,25.63708612,85.09865262,NULL
+144,Bakhtiyar pur Mandi,6,Patna,Bihar,25.45613751,85.53804673,NULL
+145,Satpura,10,Vaishali,Bihar,25.6838206,85.354965,NULL
+146,Katarmala,10,Vaishali,Bihar,25.90930793,85.29074136,NULL
+147,Bagradih Mandi,11,Begusarai,Bihar,25.418569,86.123391,NULL
+148,Baramati ,25,Pune,Maharashtra,18.1841352,74.6107628,NULL
+149,Bihta,6,Patna,Bihar,25.5584044,84.8678449,NULL
+150,nayabhojpur,32,Buxar,Bihar,25.584852,84.156704,NULL
+151,Dumaraon ,32,Buxar,Bihar,25.550113,84.150015,NULL
+152,Bramhpur ,32,Buxar,Bihar,25.602254,84.298971,NULL
+153,"Mithapur Mandi,Patna",6,Patna,Bihar,25.600862,85.132945,NULL
+154,Motipur (Muzaffarpur),2,Muzaffarpur,Bihar,26.252548,85.160899,NULL
+155,Ola Pur ,11,Begusarai,Bihar,25.416675,86.1293792,NULL
+156,Bakhri ,11,Begusarai,Bihar,25.594594,86.264108,NULL
+157,khadiyahi,1,Samastipur,Bihar,25.7470658,85.8895551,NULL
+158,Faridpur Bazar,34,Faridpur Sadar,Bangladesh,23.5897207,89.8093218,Open Market
+159,Umarga,35,Osmanabad,Maharashtra,17.8397675,76.6222433,Open Market
+160,Gudimalkapur,36,Hyderabad,Telangana,17.378782,78.437402,Open Market
+161,Mangalvedha ,22,Solapur,Maharashtra,17.5109871,75.4519516,NULL
+162,Suvikar wafers ,26,Mumbai,Maharashtra,18.917201,72.82748,NULL
+163,Trading,11,Begusarai,Bihar,25.418546,86.122163,NULL
+164,Phaltan ,21,Satara,Maharashtra,17.9844507,74.4360424,NULL
+165,Kaybee export ,21,Satara,Maharashtra,18.0345478,74.417904,NULL
+168,Belgaum ,31,Gulbarga,Karnataka,15.84969519,74.49767411,NULL
+170,kolhapur ,21,Satara,Maharashtra,16.70498733,74.24325284,NULL
+171,Trading,1,Samastipur,Bihar,25.8764717,85.7942118,NULL
+172,Kachhie dargah Patna,6,Patna,Bihar,25.62025,85.141779,NULL
+173,agamkuon Patna,6,Patna,Bihar,25.599822,85.19248,NULL
+174,muslepur Patna,6,Patna,Bihar,25.613598,85.169322,NULL
+175,Mattipar patna,6,Patna,Bihar,25.5940947,85.1375645,NULL
+176,Agamkuon,6,Patna,Bihar,25.599822,85.19248,NULL
+177,Simari ,32,Buxar,Bihar,25.641932,84.109206,NULL
+178,Gorakhpur,32,Buxar,Bihar,25.5612101,83.9810882,NULL
+179,Balia,32,Buxar,Bihar,25.56471,83.977748,NULL
+180,Haldi,32,Buxar,Bihar,25.5647103,83.9777482,NULL
+181,saraiya ,8,Bhojpur,Bihar,25.650152,84.629599,NULL
+182,Jadhua Bajar Samiti,10,Vaishali,Bihar,25.6792172,85.223398,NULL
+183,walishpur,10,Vaishali,Bihar,25.6838206,85.354965,NULL
+184,Dehri,32,Buxar,Bihar,25.418055,83.82874,NULL
+185,Garahani,8,Bhojpur,Bihar,25.409992,84.560217,NULL
+186,Isardhi,8,Bhojpur,Bihar,25.466155,84.5222189,NULL
+187,Sonbarsa,2,Muzaffarpur,Bihar,26.1447809,85.3330053,NULL
+188,Dumri,32,Buxar,Bihar,25.6228212,84.1843932,NULL
+189,Purana Bhojpur,32,Buxar,Bihar,25.583754,84.130474,NULL
+190,Bakarpur,10,Vaishali,Bihar,25.758811,85.345924,NULL
+191,Gulzarbagh,6,Patna,Bihar,25.609633,85.203519,NULL
+192,Dholi Sankra ,2,Muzaffarpur,Bihar,25.9854398,85.5725574,NULL
+193,chhapra,8,Bhojpur,Bihar,25.466155,84.5222189,NULL
+194,Damodarpur,2,Muzaffarpur,Bihar,26.1423333,85.3485072,NULL
+195,maner,6,Patna,Bihar,25.603199,85.078538,NULL
+196,Fatuha,7,Nalanda,Bihar,25.214166,85.24636,NULL
+197,Jaitipur,7,Nalanda,Bihar,25.1571279,85.2864732,NULL
+198,Khushrupur,6,Patna,Bihar,25.481082,85.388533,NULL
+199,Samsa,1,Samastipur,Bihar,25.8629679,85.7810263,NULL
+200,Rajendra nagar ,6,Patna,Bihar,25.6062727,85.1650548,NULL
+201,kharahta,32,Buxar,Bihar,25.5647103,83.9777482,NULL
+202,Niyajipur,32,Buxar,Bihar,25.649934,84.14743,NULL
+203,Ujiyar ,32,Buxar,Bihar,25.587522,83.967812,NULL
+204,chausa,32,Buxar,Bihar,25.5091994,83.892355,NULL
+205,jaunpur ,32,Buxar,Bihar,25.5612101,83.9810882,NULL
+206,patalganga,32,Buxar,Bihar,18.815147,77.1628959,NULL
+207,Harauli,10,Vaishali,Bihar,25.77475,85.226557,NULL
+208,V.Kota,40,Chittoor,Andhra Pradesh,13.001168,78.479457,Open Market
+209, Ramakuppam,40,Chittoor,Andhra Pradesh,12.899458,78.4851396,Open Market
+210,Chennai,44,Chennai,Tamil Nadu,13.0826802,80.2707184,Open Market
+211,Vizianagaram,45,Vizianagaram,Andhra Pradesh,18.1066576,83.3955506,Open Market
+212,Thagarapuvalasa,41,Visakhapatnam,Andhra Pradesh,17.9280669,83.4243305,Open Market
+213,Anandhapuram,41,Visakhapatnam,Andhra Pradesh,17.9053509,83.3629107,Open Market
+214,Guntur,42,Guntur,Andhra Pradesh,16.3066525,80.4365402,Open Market
+215,Tenali,42,Guntur,Andhra Pradesh,16.2395313,80.6493396,Open Market
+216,Marturu,43,Prakasam,Andhra Pradesh,15.9938431,80.1037721,Open Market
+217,Satnapalli,42,Guntur,Andhra Pradesh,16.394404,80.151232,Open Market
+218,Narakoduru,42,Guntur,Andhra Pradesh,16.226258,80.514671,Open Market
