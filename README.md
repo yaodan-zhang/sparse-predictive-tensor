@@ -6,9 +6,9 @@ Note: This GitHub repository is confidential for read only, any extraction must 
 
 This project aims to predict future prices for approximately 150 crops across 200 online Indian markets, using a sparse historical transaction data spanning from 2014 to 2019. We utilized three datasets: Transaction Data, containing daily transaction data including crop and mandi IDs, seller and buyer IDs, crop quantity, and crop traded price; Mandi Characteristics, providing mandi details such as name, district, state, location, and market type (open market or not); and Crop Characteristics, mapping crop names to IDs. Here's a summary of each dataset:
 
-![dataset_first_part] ./data1.png
+![dataset_first_part] (https://github.com/yaodan-zhang/ptf-algo/blob/main/data1.png)
 
-![dataset_second_part] ./data2.png
+![dataset_second_part] (https://github.com/yaodan-zhang/ptf-algo/blob/main/data2.png)
 
 Sparse transaction data poses a challenge as price information may not be available for every crop in every mandi daily due to farmers' irregular visits and seasonal crop availability. To create precise one-day ahead price predictions for each crop in every market, we first conduct exploratory data analysis and employ missing-value imputation techniques. We then select predictive models based on four machine learning techniques (the main one called [PTF](https://www.cs.cmu.edu/~jgc/publication/PublicationPDF/Temporal_Collaborative_Filtering_With_Bayesian_Probabilidtic_Tensor_Factorization.pdf)'s development is spearheaded in this project) and evaluate their performance. Throughout the project, we employ a train-test validation method to assess model accuracy.
 
@@ -82,7 +82,7 @@ In the second part, we aim to construct imputation models to address the missing
 
 In our train-test validation setup, we divided the transaction data from 2014 to 2018 for training and data from 2019 for testing. Treating dates as "month-day" for consistency across years, we utilized the weighted price of a crop for the same month, day, and mandi, regardless of the year. For CART, RF, and CNN, we selected categories including "date no year", "crop ID", "mandi ID", "District ID", "Latitude", "Longitude", and "Type" (1 for open market, 0 for null). Additionally, for PTF, we split the training sets into eight subsets based on "date no year", "mandi ID", and "crop ID" to enhance model accuracy; these subsets were used to construct mandi features, crop features, and time features as stated by Eq. 3.9 in the [paper](https://www.cs.cmu.edu/~jgc/publication/PublicationPDF/Temporal_Collaborative_Filtering_With_Bayesian_Probabilidtic_Tensor_Factorization.pdf). Consequently, the testing sets were also split into eight subsets using the same criteria, and the MAE of all five models were assessed within each subset. Finally, we evaluated the average MAE across the entire testing set. The whole process was implemented in `part2.py` with the following results.
 
-![result] ./result.png
+![result] (https://github.com/yaodan-zhang/ptf-algo/blob/main/result.png)
 
 We found that among the seven rounds where the eighth round has an empty testing dataset, PTF's performance remains comparable to the tree and the mean techniques, and is most of the time better than the performance of CNN. One exception is in round 3, where the instability of its performance might come from a bad approximation of the optimal log likelihood in the model, because this likelihood function is non-convex and therefore ”SLSQP” in the minimizer function only loops to a local but not global minimum. But one potential gain using collaborative filtering is that, the user and item features can be applied to similar scenarios when historical data of the users over an item is completely unavailable. In this case, past mean is no longer available. Apart from that, PTF can capture the possible trends with time using its time layer/feature, but in our setting mean and trees seemed to be good enough for this aspect.
 
