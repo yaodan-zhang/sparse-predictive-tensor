@@ -1,6 +1,6 @@
 # Project: Predictive Modeling for Crop Prices in Online Indian Markets with Sparse Historical Data
 
-Note: This GitHub repository is a research project designed by Professor Divya Singhvi from NYU Stern School of Business, with author's implementation.
+Note: This GitHub repository is a research project designed by Professor Divya Singhvi from NYU Stern School of Business, with author's implementation and report analysis.
 
 ## Introduction
 
