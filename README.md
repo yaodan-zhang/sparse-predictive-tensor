@@ -1,16 +1,12 @@
 # Predictive Modeling for Crop Prices in Online Markets with Sparse Historical Data
 
-Note: This GitHub repository is a research project designed by Professor Divya Singhvi from NYU Stern School of Business, with author's implementation and report analysis.
+This is a research project designed by Professor Divya Singhvi at NYU Stern School of Business, with my implementation and report analysis. All datasets are provided by Professor Singhvi and are confidential for view only.
 
 ## Introduction
 
-This project aims to predict future prices for approximately 150 crops across 200 online Indian markets, using a sparse historical transaction data spanning from 2014 to 2019. We utilized three datasets: Transaction Data, containing daily transaction data including crop and mandi IDs, seller and buyer IDs, crop quantity, and crop traded price; Mandi Characteristics, providing mandi details such as name, district, state, location, and market type (open market or not); and Crop Characteristics, mapping crop names to IDs. Here's a summary of each dataset:
+We aim to predict future prices for 151 crops across 212 online markets, with a sparse historical transaction data from 2014 to 2019. We utilized three datasets: Transaction Data, Mandi Characteristics, and Crop Characteristics.
 
-![dataset_first_part](https://github.com/yaodan-zhang/ptf-algo/blob/main/data1.png)
-
-![dataset_second_part](https://github.com/yaodan-zhang/ptf-algo/blob/main/data2.png)
-
-Sparse transaction data poses a challenge as price information may not be available for every crop in every mandi daily due to farmers' irregular visits and seasonal crop availability. To create precise one-day ahead price predictions for each crop in every market, we first conduct exploratory data analysis and employ missing-value imputation techniques. We then select predictive models based on four machine learning techniques (the main one called [PTF](https://www.cs.cmu.edu/~jgc/publication/PublicationPDF/Temporal_Collaborative_Filtering_With_Bayesian_Probabilidtic_Tensor_Factorization.pdf)'s development is spearheaded in this project) and evaluate their performance. Throughout the project, we employ a train-test validation method to assess model accuracy.
+Sparse historical data poses a challenge as price information may not be available for every crop in every market due to farmers' irregular visits and seasonal crop availability. To create precise one-day ahead price predictions for each crop in every market, we first conduct exploratory data analysis and employ missing-value imputation techniques. Then, we select four predictive machine learning models - CART, [PTF](https://www.cs.cmu.edu/~jgc/publication/PublicationPDF/Temporal_Collaborative_Filtering_With_Bayesian_Probabilidtic_Tensor_Factorization.pdf) (implementation spearheaded in this project) , Random Forest, and Convolutional Neural Networks, and evaluate their performance. Throughout the project, we employ a train-test validation method to assess model accuracy.
 
 ## Part I. Exploratory Data Analysis
 
