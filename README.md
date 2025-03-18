@@ -6,19 +6,19 @@ This is a research project designed by Professor Divya Singhvi at NYU Stern Scho
 
 We aim to predict future prices for 151 crops across 212 online markets, with a sparse historical transaction data from 2014 to 2019. We utilized three datasets: Transaction Data, Mandi Characteristics, and Crop Characteristics.
 
-Sparse historical data poses a challenge as price information may not be available for every crop in every market due to farmers' irregular visits and seasonal crop availability. To create precise one-day ahead price predictions for each crop in every market, we first conduct exploratory data analysis and employ missing-value imputation techniques. Then, we select four predictive machine learning models - CART, [PTF](https://www.cs.cmu.edu/~jgc/publication/PublicationPDF/Temporal_Collaborative_Filtering_With_Bayesian_Probabilidtic_Tensor_Factorization.pdf) (implementation spearheaded in this project) , Random Forest, and Convolutional Neural Networks, and evaluate their performance. Throughout the project, we employ a train-test validation method to assess model accuracy.
+Sparse historical data poses a challenge as price information may not be available for every crop in every market due to farmers' irregular visits and seasonal crop availability. To create precise one-day ahead price predictions for each crop in every market, we first conduct exploratory data analysis and employ missing-value imputation techniques. Then, we select four predictive machine learning models - CART, [PTF](https://www.cs.cmu.edu/~jgc/publication/PublicationPDF/Temporal_Collaborative_Filtering_With_Bayesian_Probabilidtic_Tensor_Factorization.pdf) (implementation spearheaded in this project), Random Forest, and Convolutional Neural Networks, and evaluate their performance.
 
 ## Part I. Exploratory Data Analysis
 
-In the first part, we addressed key questions to guide our selection of the prediction model:
+We first addressed key questions to guide our selection of the prediction model:
 
-1. [ ] We investigated whether geographically proximate markets exhibit correlated crop prices.
-2. [ ] We examined if certain markets demonstrate higher price variability compared to others.
-3. [ ] We identified if there exists a dominant market influencing other markets.
-4. [ ] We explored correlations among crops akin to market correlations.
+1. [ ] Whether geographically proximate markets exhibit correlated crop prices.
+2. [ ] If certain markets demonstrate higher price variability compared to others.
+3. [ ] If there exists a dominant market influencing other markets.
+4. [ ] Correlations among crops to market correlations.
 
 ---
-
+###Whether geographically proximate markets exhibit correlated crop prices.
 For our first question, we grouped markets by district using district IDs. Then, we identified the most traded crop in each district based on transaction data from 2014 to 2019. Next, we selected the two markets trading this crop most frequently in this district. Using intersected transaction dates, we calculated the correlation coefficient between these two markets' prices for the chosen crop over time. This process was implemented in `PriceCorrOverCloseMarkets()` in `part1.py`. With output as follows:
 
 ```
