@@ -18,7 +18,7 @@ We first addressed key questions to guide our selection of the prediction model:
 4. [ ] Correlations among crops to market correlations.
 
 ---
-###Whether geographically proximate markets exhibit correlated crop prices.
+### Whether geographically proximate markets exhibit correlated crop prices.
 For our first question, we grouped markets by district using district IDs. Then, we identified the most traded crop in each district based on transaction data from 2014 to 2019. Next, we selected the two markets trading this crop most frequently in this district. Using intersected transaction dates, we calculated the correlation coefficient between these two markets' prices for the chosen crop over time. This process was implemented in `PriceCorrOverCloseMarkets()` in `part1.py`. With output as follows:
 
 ```
