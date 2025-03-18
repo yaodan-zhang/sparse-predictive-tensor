@@ -8,7 +8,7 @@ We aim to predict future prices for 151 crops across 212 online markets, with a 
 
 Sparse historical data poses a challenge as price information may not be available for every crop in every market due to farmers' irregular visits and seasonal crop availability. To create precise one-day ahead price predictions for each crop in every market, we first conduct exploratory data analysis and employ missing-value imputation techniques. Then, we select four predictive machine learning models - CART, [PTF](https://www.cs.cmu.edu/~jgc/publication/PublicationPDF/Temporal_Collaborative_Filtering_With_Bayesian_Probabilidtic_Tensor_Factorization.pdf) (implementation spearheaded in this project), Random Forest, and Convolutional Neural Networks, and evaluate their performance.
 
-## Part I. Exploratory Data Analysis
+## I. Explore Data
 
 We first addressed key questions to guide our selection of the prediction model:
 
@@ -44,10 +44,10 @@ Of all markets, the minimum price variance for a single market is 0.45, the 25th
 
 We observed a 75th quantile variance of 97.77, a maximum variance of 185.79. Therefore, it is reasonable to deduce that some markets are much more variable than the others.
 
+### 3. If there exists a dominant market influencing other markets
+We examined the impact of a particular market on all other markets. For each market, we identified the crop traded most frequently and calculated its weighted price across all other markets. Subsequently, we conducted a correlation analysis between the price of this market's crop (shifted one day ahead) and the weighted crop price of all other markets, determining if this market exerted influence on others. Analysis was conducted using intersected transaction dates and implemented in `InfluentialMarket ()` in `explore_data.py`.
 
-For our third question, we examined the impact of a particular market on all other markets. For each market, we identified the crop traded most frequently and calculated its weighted price across all other markets. Subsequently, we conducted a correlation analysis between the price of this market's crop (shifted one day ahead) and the weighted crop price of all other markets, determining if this market exerted influence on others. Analysis was conducted using intersected transaction dates and implemented in `InfluentialMarket ()` in `part1.py`.
-
-The maximum correlation achieved through this method was 0.51, attributed to mandi 22. However, upon examining the correlation table between mandi 22 and other mandis for crop 6's price, we observed that only data from the years 2017 and 2018 were utilized, indicating a limited temporal correlation strength. We also analyzed a correlation table for mandi 3 and other mandis regarding crop 2's price:
+The maximum correlation achieved through this method was 0.51, attributed to market ID 22. However, upon examining the correlation table between market 22 and other market for crop 6's price, we observed that only data from the years 2017 and 2018 were utilized, indicating a limited temporal correlation strength. We also analyzed a correlation table for market 3 and other markets regarding crop 2's price:
 
 ```
 The price correlation table over crop 2 between market 3 and other markets is
@@ -65,16 +65,17 @@ The price correlation table over crop 2 between market 3 and other markets is
 581 2018-07-25              15.0          9.652697
 
 [582 rows x 3 columns]
-Correlation equals 0.48521514609447636.
+Correlation equals 0.48.
 ```
 
-This correlation demonstrated robustness over time, spanning from 2015 to 2018 across 582 days, with a value just slightly below 0.5. However, we noted that the price for this crop remained relatively stable around 8.0. Given these observations, we inferred that this crop might be a daily cooking necessity, which is traded frequently with a consistently low price. Consequently, concluding that mandi 3 is an influential market would be inappropriate, as all markets may exhibit similar price fluctuations for such an essential crop.
+This correlation demonstrated robustness over time, spanning from 2015 to 2018 across 582 days, with a value just slightly below 0.5. However, we noted that the price for this crop remained relatively stable around 8.0. Given these observations, we inferred that this crop might be a daily necessity, which is traded frequently with a consistently low price. Consequently, concluding that market 3 is an influential market would be inappropriate, as all markets may exhibit similar price fluctuations for such an essential crop.
 
-For our final question, we identified the top 5 traded crops based on trading days and conducted correlations for every pair of them if their intersected trading days exceeded 400. This task was completed in `CropCorrelation ()` in `part1.py`.
+### 4. Correlations among crops to market correlations
+We identified the top 5 traded crops based on trading days and conducted correlations for every pair of them if their intersected trading days exceeded 400. This task was completed in `CropCorrelation ()` in `explore_data.py`.
 
 Among the outputed 6 pairs of crops, 1 pair has no correlation, 3 pairs have slightly positive price correlation, 1 pair has slightly negative price correlation, and 1 pair has a strong positve correlation (crop 4 and crop 9) with a Pearson correlation of 0.63.
 
-## Part II. Prediction Models Selection and Evaluation
+## II. Predictive Models and Evaluation
 
 In the second part, we aim to construct imputation models to address the missing values mentioned earlier, facilitating price prediction. Following our data exploration insights, we identified that crop prices correlate strongly with categorical traits like mandi location and crop type. Consequently, we selected two models, Classification and Regression Trees (CART) and Random Forest regressor (RF), for category-based predictions. Another model we chose is Temporal Collaborative Filtering using Probabilistic Tensor Factorization (PTF), which was built on Equation 3.9 of the paper "[Temporal Collaborative Filtering with Bayesian Probabilistic Tensor Factorization](https://www.cs.cmu.edu/~jgc/publication/PublicationPDF/Temporal_Collaborative_Filtering_With_Bayesian_Probabilidtic_Tensor_Factorization.pdf)". The reason for choosing PTF is that it deals with time-related sparse data, which perfectly suits our purpose. Since markets are commonly sensitive to their previous prices, another model we chose is simply the past mean price of the crops if available; if not, we filled it with the average price of all crops. The last model we chose is the Multi-Layer Perceptron regressor, one of the fundamental convolutional neural networks (CNN).
 
