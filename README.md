@@ -1,4 +1,4 @@
-# Report on Predictive Modeling for Crop Prices in Online Markets with Sparse Historical Data
+# Report on Predictive Modeling for Crop Prices in Markets with Sparse Historical Data
 
 This is a research project designed by Professor Divya Singhvi at NYU Stern School of Business, with my implementation and report analysis. All datasets are provided by Professor Singhvi and are confidential for view only.
 
