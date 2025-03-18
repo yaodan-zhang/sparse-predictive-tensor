@@ -19,21 +19,22 @@ We first addressed key questions to guide our selection of the prediction model:
 
 ---
 ### Whether geographically proximate markets exhibit correlated crop prices.
-For our first question, we grouped markets by district using district IDs. Then, we identified the most traded crop in each district based on transaction data from 2014 to 2019. Next, we selected the two markets trading this crop most frequently in this district. Using intersected transaction dates, we calculated the correlation coefficient between these two markets' prices for the chosen crop over time. This process was implemented in `PriceCorrOverCloseMarkets()` in `part1.py`. With output as follows:
+We grouped markets by district IDs. Then we identified the most traded crop in each district based on transaction data from 2014 to 2019. Next, we selected the two markets trading this crop most frequently in this district. Using intersected transaction dates, we calculated the correlation coefficient between these two markets' prices for the chosen crop over time. This process was implemented in `PriceCorrOverCloseMarkets()` in `explore_data.py`. Output as follows:
 
 ```
-Correlation between mandi 3 and mandi 9 over crop 17 is 0.8082058671768368.
-Correlation between mandi 4 and mandi 22 over crop 6 is 0.6588707894950585.
-Correlation between mandi 63 and mandi 187 over crop 4 is 0.5933894315791544.
-Correlation between mandi 16 and mandi 117 over crop 6 is 0.47967122154626196.
-Correlation between mandi 122 and mandi 126 over crop 4 is 0.5288967137844734.
-Correlation between mandi 147 and mandi 25 over crop 4 is 0.5426776295567428.
-Correlation between mandi 33 and mandi 41 over crop 2 is 0.8322216322594749.
-Correlation between mandi 150 and mandi 152 over crop 21 is 0.6493325813182255.
-The average price correlation over 8 pairs of close markets is 0.6366582333395285.
+Correlation between mandi 3 and mandi 9 over crop 17 is 0.80.
+Correlation between mandi 4 and mandi 22 over crop 6 is 0.65.
+Correlation between mandi 63 and mandi 187 over crop 4 is 0.59.
+Correlation between mandi 16 and mandi 117 over crop 6 is 0.47.
+Correlation between mandi 122 and mandi 126 over crop 4 is 0.52.
+Correlation between mandi 147 and mandi 25 over crop 4 is 0.54.
+Correlation between mandi 33 and mandi 41 over crop 2 is 0.83.
+Correlation between mandi 150 and mandi 152 over crop 21 is 0.64.
+The average price correlation over 8 pairs of close markets is 0.63.
 ```
 
-Our analysis revealed that out of the eight pairs of markets where transaction data allowed correlation calculation, all but one exhibited correlations exceeding 0.5, with two pairs exceeding 0.8, indicating a notably strong positive correlation. On average, correlations hovered around 0.63. Thus, we concluded that geographically proximate markets tend to demonstrate price correlation for their respective crops.
+Our analysis revealed that out of 8 pairs of markets, all but one exhibited correlations exceeding 0.5, with two pairs exceeding 0.8, indicating a notably strong positive correlation. On average, correlations hovered around 0.63. We concluded that geographically proximate markets tend to demonstrate price co-movement for their crops.
+
 
 For our second question, we conducted an exploration on a mandi-by-mandi basis. Specifically, for each mandi, we identified the most traded crop and calculated the variance of its daily weighted price. This procedure was implemented in `MarketVariability ()` in `part1.py`. The output is:
 
