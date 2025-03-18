@@ -18,7 +18,7 @@ We first addressed key questions to guide our selection of the prediction model:
 4. [ ] Correlations among crops to market correlations.
 
 ---
-### Whether geographically proximate markets exhibit correlated crop prices.
+### 1. Whether geographically proximate markets exhibit correlated crop prices
 We grouped markets by district IDs. Then we identified the most traded crop in each district based on transaction data from 2014 to 2019. Next, we selected the two markets trading this crop most frequently in this district. Using intersected transaction dates, we calculated the correlation coefficient between these two markets' prices for the chosen crop over time. This process was implemented in `PriceCorrOverCloseMarkets()` in `explore_data.py`. Output as follows:
 
 ```
@@ -35,14 +35,15 @@ The average price correlation over 8 pairs of close markets is 0.63.
 
 Our analysis revealed that out of 8 pairs of markets, all but one exhibited correlations exceeding 0.5, with two pairs exceeding 0.8, indicating a notably strong positive correlation. On average, correlations hovered around 0.63. We concluded that geographically proximate markets tend to demonstrate price co-movement for their crops.
 
-
-For our second question, we conducted an exploration on a mandi-by-mandi basis. Specifically, for each mandi, we identified the most traded crop and calculated the variance of its daily weighted price. This procedure was implemented in `MarketVariability ()` in `part1.py`. The output is:
+### 2. If certain markets demonstrate higher price variability compared to others
+Here we conducted an exploration on a market-by-market basis. For each market, we identified the most traded crop and calculated the variance of its daily weighted price. This procedure was implemented in `MarketVariability ()` in `explore_data.py`. The output is:
 
 ```
-Of all markets, the minimum price variance for a single market is 0.4510640032548529, the 25th quantile price variance is 13.712867783124935, median price variance is 30.823880561057084, the 75th quantile price variance is 97.777898403187, the maximum price variance is 185.79842023464707.
+Of all markets, the minimum price variance for a single market is 0.45, the 25th quantile price variance is 13.71, median price variance is 30.82, the 75th quantile price variance is 97.77, the maximum price variance is 185.79.
 ```
 
-We observed a 75th quantile variance of 97.77, while a maximum variance of 185.79. Therefore, it is reasonable to deduce that, some markets are much more variable than the others.
+We observed a 75th quantile variance of 97.77, a maximum variance of 185.79. Therefore, it is reasonable to deduce that some markets are much more variable than the others.
+
 
 For our third question, we examined the impact of a particular market on all other markets. For each market, we identified the crop traded most frequently and calculated its weighted price across all other markets. Subsequently, we conducted a correlation analysis between the price of this market's crop (shifted one day ahead) and the weighted crop price of all other markets, determining if this market exerted influence on others. Analysis was conducted using intersected transaction dates and implemented in `InfluentialMarket ()` in `part1.py`.
 
