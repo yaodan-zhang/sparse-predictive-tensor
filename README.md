@@ -92,9 +92,9 @@ Finally, we evaluated the average MAE across the entire testing set. The whole p
 
 We found that, among the seven rounds where the eighth round's testing dataset is empty due to its lackness, PTF's performance remains comparable to CART (RF) and Mean, and is most of the time better than the performance of CNN. One exception is in round 3, where the instability of its performance might come from a bad approximation of the optimal log likelihood in the model, because this likelihood function is non-convex and therefore the minimizer only loops to a local but not global minimum. However, one potential gain using collaborative filtering (PTF) is that, the trained feature matrices can be applied to similar scenarios when historical data of a market over a crop is completely unavailable. In this case, past mean is no longer available, and PTF supplies the need. PTF can also capture possible trends emerging over time with its time feature, but in our setting Mean and CART (RF) seems to be good enough.
 
-## III. Discussion
+### Discussion
 
-Time division is another crutial factor that matters in model performance, as here we chose year 2014 to 2018's data to be the training set and year 2019 to be the testing set. This 5:1 train-test ratio is good enough for a typical machine learning technique, but what if the traning data becomes more and more sparse? Future evaluations can focus on the impact of sparsity threshold on model performance and potentially demonstrate the superiority of the PTF technique.
+Time division is another factor that matters in model performance, as here we chose year 2014 to 2018's data to be the training set and year 2019 to be the testing set. This 5:1 train-test ratio is good enough for a typical machine learning model, but what if the traning data becomes sparser and sparser? Future explorations can focus on the impact of sparsity threshold on model performance and potentially demonstrate the superiority of the PTF technique in such a case who extracts the time feature.
 
 ## Reference
 
